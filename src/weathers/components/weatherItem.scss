@@ -1,0 +1,32 @@
+
+.weather-icon{
+  height: 7rem;
+  width: 7rem;
+  margin-left: 3rem;
+
+}
+.weather-icon-nav{
+  height: 7rem;
+  width: 7rem;
+  margin-left: 3rem;
+margin-bottom: -1rem;
+}
+.forecast-degree{
+
+font-size: 0.6cm;
+padding: -1rem 1rem;
+margin-top: 1.5rem;
+color: rgb(7, 7, 5);
+}
+.h_item{
+  padding: 1rem 1rem;
+  color: black;
+}
+.continerCard{
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column ;
+  text-align: center;
+  
+  }
