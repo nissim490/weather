@@ -277,15 +277,30 @@ body {
     flex-wrap: wrap;
     flex-direction: column ;
     justify-content: center;
-  
+    position: absolute;
   }
-
+ 
   .Autocomplete{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row ;
     justify-content: center;
+    position: absolute;
+    margin-left: 65rem;
+    margin-top: -54.2rem;
+   /*  margin-left: 65rem;
+    margin-top: -54.2rem; */
   
+  }
+  @media only screen and (max-width: 769px){
+    .Autocomplete{
+    position: absolute;
+      margin-top: -195rem;
+      margin-left: 45rem;
+   
+    
+    }
+
   }
 .firstContiner{
   display: flex;
@@ -309,6 +324,10 @@ font-size: 2.2rem;
 padding: 5px;
 color: black;
 
+}
+.divs{
+ position: 'none';
+  
 }
 .Warning{
   padding: 5px;
@@ -346,6 +365,7 @@ color: black;
   font-size: 4rem;
   text-align: center;
   padding: 5px;
+  margin-left: 22rem;
 }
 .composition {
   position: relative; }

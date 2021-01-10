@@ -33,7 +33,7 @@ let m = new Map()
               const fetchUsers = async () => {
                 try {
                   const response = await sendRequest(
-                    ` https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=MYHpxs7tlWWvlbbL2eeAJG09ow85LYER&q=${city}`,
+                    ` https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=b1B7VUr0HfJ8VbIqmHG1TFUIjM7dDj6M&q=${city}`,
                     'get',
                   );
                   setLoadedUsers2(response.data);
@@ -48,7 +48,7 @@ let m = new Map()
     
 
   /*           useEffect(() => {
-  ///WwI9p6r8dGQtToXg4mP4GKgF1J7pHJy  U6aCDll4XCfWmsiW2eUuDGY6rlkcLM9y jCLPUDFqHDZV7369qCF3gfHGutmpcVKG MYHpxs7tlWWvlbbL2eeAJG09ow85LYER
+  ///WwI9p6r8dGQtToXg4mP4GKgF1J7pHJy  U6aCDll4XCfWmsiW2eUuDGY6rlkcLM9y jCLPUDFqHDZV7369qCF3gfHGutmpcVKG MYHpxs7tlWWvlbbL2eeAJG09ow85LYER b1B7VUr0HfJ8VbIqmHG1TFUIjM7dDj6M
               const fetchUsers = async () => {
                 try {
                   const response = await sendRequest(
@@ -68,7 +68,7 @@ let m = new Map()
                           const fetchUsers = async () => {
                             try {
                               const response = await sendRequest(
-                                ` https://dataservice.accuweather.com/currentconditions/v1/${value1}?apikey=ZWwI9p6r8dGQtToXg4mP4GKgF1J7pHJy`,
+                                ` https://dataservice.accuweather.com/currentconditions/v1/${value1}?apikey=b1B7VUr0HfJ8VbIqmHG1TFUIjM7dDj6M`,
                                 'get',
                               );
                               
@@ -89,7 +89,7 @@ let m = new Map()
                           const fetchUsers = async () => {
                             try {
                               const response = await sendRequest(
-                                `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${value1}?apikey=MYHpxs7tlWWvlbbL2eeAJG09ow85LYER`,
+                                `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${value1}?apikey=b1B7VUr0HfJ8VbIqmHG1TFUIjM7dDj6M`,
                                 'get',
                               );
                               if(!response)
@@ -137,6 +137,7 @@ if(!!loadedUsers2)
     zIndex: 100,
     borderBottom:'3px solid #3b63d1',
   };
+  
   let src=`https://www.accuweather.com/images/weathericons/${icon}.svg`
   return (
     <React.Fragment> 
@@ -145,12 +146,13 @@ if(!!loadedUsers2)
 
       <div className='Autocomplete'>
       <div className='search'>  <i class="fas fa-search"></i></div> 
-        <Autocomplete    
+        <Autocomplete  
+         
         inputProps={{ style: menuStyle, placeholder:"Choose a City"}}
         items={autoCompleteCity}
         shouldItemRender={(item, value) => item.toLowerCase().indexOf(value.toLowerCase()) > -1}
         getItemValue={item => item}
-        renderItem={(item, isHighlighted) => <div style={{ position: 'none',  color:'black',background: isHighlighted ? '#3b63d1' : 'white' }}> <b>{item}</b> </div>}
+        renderItem={(item, isHighlighted) => <div style={{   color:'black',   /* position: 'none',  */ background: isHighlighted ? '#3b63d1' : 'white' }}> <b>{item}</b> </div>}
         value={value}
         onChange={n}
         onSelect={ (val)=>{
@@ -169,6 +171,9 @@ if(!!loadedUsers2)
     </div>
     {!!loadedUsers3&&<h1 className='h2_item'> {loadedUsers3.WeatherText} </h1>}
       { !!loadedUsers&&<WeatherList items={loadedUsers}/>} 
+     
+
+
  </div>
     </React.Fragment>
   );
