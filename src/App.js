@@ -23,7 +23,8 @@ const App = () => {
         <Route path="/Forecaste">
           <Forcaste />
         </Route>
-        <Redirect to="/" />
+        
+        <Redirect to="/Forecaste" exact />
       </Switch>
     );
   

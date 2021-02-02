@@ -34,6 +34,7 @@ const src = `https://www.accuweather.com/images/weathericons/3.svg`
             <nav class="navigation__nav">
 
             <ul class="navigation__list">
+           
             <li class="navigation__item"><a href="/" class="navigation__link"><span> <img  alt="weatherIcon" className="weather-icon-nav" src={srcHome}></img></span>Home Page</a></li>
             <li class="navigation__item"><a href="/Forecaste" class="navigation__link"><span> <img  alt="weatherIcon" className="weather-icon-nav" src={src}></img></span> Weather</a></li>
   

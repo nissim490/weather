@@ -1,26 +1,53 @@
- .flight-list {
-  list-style: none;
-  margin: 1rem auto;
-  padding: 1;
-  width: 90%;
- 
- 
-  
-  
-} 
+
 
 .flex-container {
-  margin-top:10rem ;
+  margin-top:5rem ;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row ;
   justify-content: center;
-  margin-left: 24rem;
+ /*  width: max-content; */
+ /*  margin-left: 24rem; */
+ 
   .item {
-    padding: 35px;
+    padding: 20px;
     
   }
 }
 
 
+/* 
+@media only screen and (max-width: 500px){
 
+  .flex-container {
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column ;
+    justify-content: center;
+    margin-left: 13rem;
+   
+    .item {
+      padding: 0px;
+      
+    }
+  }
+
+} */
+@media only screen and (max-width: 400px){
+
+  .flex-container {
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column ;
+    justify-content: center;
+    margin-left: 10rem;
+   
+    .item {
+      padding: 0px;
+      
+    }
+  }
+
+}

@@ -22,13 +22,13 @@ const HomePage  = () => {
   <div className="tour-item__image"><img src='https://images.unsplash.com/photo-1486016006115-74a41448aea2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1047&q=80' alt="title" /></div>
     
   <div class="header__text-box">
-    <div>   </div>
-                <h1 class="heading-primary">
+      <h1 class="heading-primary">
                 
-                <span class="heading-primary--main"><img  alt="HomeIcon" className="HomeIcon" src={src}></img>FORECAST</span>
-                    <p></p>
+                <span class="heading-primary--main">FORECAST</span>
+                 
                    
-                </h1>
+                </h1> 
+             
                 {/*  <NavLink to="/Balance"  class="btn btn--white btn--animated">Balance</NavLink> */}
  </div>
            
